@@ -1,8 +1,5 @@
 # Github
 Primeiro projeto usando Controle de Versão
+[logo](https://github.com/favicon.ico)
 
-<<<<<<< HEAD
-Ajuda: [Git](https://git-scm.com/doc)# PWI
-=======
-Ajuda: [Git](https://git-scm.com/doc) 
->>>>>>> f92468bdec91dd0dc3c2f402f45b05a26f52425a
+Ajuda: [Git](https://git-scm.com/doc)

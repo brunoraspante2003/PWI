@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function res() {
+                var nota1 = parseFloat(document.f1.nota1.value);
+                var nota2 = parseFloat(document.f1.nota2.value);
+                var nota3 = parseFloat(document.f1.nota3.value);
+                var nota4 = parseFloat(document.f1.nota4.value);
+                var res = (nota1 + nota2 + nota3 + nota4)/4;
+                if (res >= 7.0){
+                    document.getElementById("total").innerHTML = "Aprovado. ";
+                }else if(res < 5.0){
+                    document.getElementById("total").innerHTML = "Reprovado. ";
+                }else{
+                    document.getElementById("total").innerHTML = "Exame. ";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Resultados possíveis</h1><br>
+        <form action="" name="f1">
+            Informe o nota 1: <input type="text" name="nota1" /><br>
+            Informe o nota 2: <input type="text" name="nota2" /><br>
+            Informe o nota 3: <input type="text" name="nota3" /><br>
+            Informe o nota 4: <input type="text" name="nota4" /><br><br>
+            <p id="total"></p>
+        </form>
+        <button onclick="res()">Entrar</button>
+    </body>
+</html>

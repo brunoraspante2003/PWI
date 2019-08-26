@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function pesos() {
+                var peso = parseFloat(document.f1.peso.value);
+                var res1 = peso * 1.15;
+                var res2 = peso * 0.80;
+                document.getElementById("engorda").innerHTML = "Se engordar 15% = " + res1;
+                document.getElementById("emagrece").innerHTML = "Se emagrecer 20% = " + res2;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Pesos</h1><br>
+        <form action="" name="f1">
+            Informe o Peso : <input type="text" name="peso" /><br><br>
+            <p id="engorda"></p>
+            <p id="emagrece"></p>
+        </form>
+        <button onclick="pesos()">Entrar</button>
+    </body>
+</html>

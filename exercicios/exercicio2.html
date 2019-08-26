@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function idadeMedia() {
+                var pessoa1 = parseFloat(document.f1.pessoa1.value);
+                var pessoa2 = parseFloat(document.f1.pessoa2.value);
+                var idadeMedia = (pessoa1 + pessoa2)/2;
+                document.getElementById("total").innerHTML = "Resultado = " + idadeMedia;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Idade Média entre duas Pessoas</h1><br>
+        <form action="" name="f1">
+            Idade da pessoa 1: <input type="text" name="pessoa1" /><br>
+            Idade da pessoa 2: <input type="text" name="pessoa2" /><br><br>
+            <p id="total"></p>
+        </form>
+        <button onclick="idadeMedia()">Entrar</button>
+    </body>
+</html>

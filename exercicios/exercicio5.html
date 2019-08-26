@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function res() {
+                var Valor1 = parseFloat(document.f1.Valor1.value);
+                var Valor2 = parseFloat(document.f1.Valor2.value);
+                var res = Valor1 + Valor2;
+                if (res < 0){
+                    document.getElementById("total").innerHTML = "O Resultado é negativo. ";
+                }else if(res > 0){
+                    document.getElementById("total").innerHTML = "O Resultado é positivo. ";
+                }else{
+                    document.getElementById("total").innerHTML = "O Resultado é nulo. ";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Resultados possíveis</h1><br>
+        <form action="" name="f1">
+            Informe o Valor 1: <input type="text" name="Valor1" /><br>
+            Informe o Valor 2: <input type="text" name="Valor2" /><br><br>
+            <p id="total"></p>
+        </form>
+        <button onclick="res()">Entrar</button>
+    </body>
+</html>

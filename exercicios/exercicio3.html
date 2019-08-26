@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function realEmDolar() {
+                var reais = parseFloat(document.f1.reais.value);
+                var cotacaoDolar = parseFloat(document.f1.cotacaoDolar.value);
+                var res = reais / cotacaoDolar;
+                document.getElementById("total").innerHTML = "Resultado = " + res;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Valor em Dólares</h1><br>
+        <form action="" name="f1">
+            Informe os Reais : <input type="text" name="reais" /><br>
+            Informe a Cotação do Dolar: <input type="text" name="cotacaoDolar" /><br><br>
+            <p id="total"></p>
+        </form>
+        <button onclick="realEmDolar()">Entrar</button>
+    </body>
+</html>

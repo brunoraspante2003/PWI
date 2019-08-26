@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function mult() {
+                var base = parseFloat(document.f1.base.value);
+                var altura = parseFloat(document.f1.altura.value);
+                var mult = base * altura;
+                document.getElementById("total").innerHTML = "Resultado = " + mult;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Área de um retângulo</h1><br>
+        <form action="" name="f1">
+            Base: <input type="text" name="base" /><br>
+            Altura: <input type="text" name="altura" /><br><br>
+            <p id="total"></p>
+        </form>
+        <button onclick="mult()">Entrar</button>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function maior() {
+                var v1 = parseFloat(document.f1.v1.value);
+                var v2 = parseFloat(document.f1.v2.value);
+                var v3 = parseFloat(document.f1.v3.value);
+                if(v1 >= v2 && v1 >= v3){
+                    alert("O maior é " + v1);
+                }else if(v2 >= v1 && v2 >= v3){
+                    alert("O maior é " + v2);
+                }else{
+                    alert("O maior é " + v3);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Número Maior</h1>
+        <form action="" name="f1" onsubmit="maior()">
+            Valor 1: <input type="text" name="v1" /><br>
+            Valor 2: <input type="text" name="v2" /><br>
+            Valor 3: <input type="text" name="v3" /><br>
+            <input type="submit" value="Somar" />
+        </form>
+    </body>
+</html>

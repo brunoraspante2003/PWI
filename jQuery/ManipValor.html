@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Obtem o Value de um input</title>
+       <meta charset="UTF-8">
+       <script src="jQuery/jquery-3.4.1.js"></script>
+       <script>
+                $(document).ready(function()  {
+                    $("button").click(function() {
+                        alert("Valor: " + $("#nome").val());
+                    });
+                });
+       </script>
+</head>
+<body>
+    <p>Nome: <input type="text" id="nome" value="Bruno"></p>
+    <button>Ver Valor</button>
+</body>
+</html>
+

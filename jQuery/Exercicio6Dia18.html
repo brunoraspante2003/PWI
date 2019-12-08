@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+   <script src="jQuery/jquery-3.4.1.js"></script>
+     <title>Exemplo</title>
+  <style type="text/css">
+    </style>
+    <script>
+      $(document).ready(function (){
+       $("#setNome").click(function (){
+          var nome = $("input[name='nome']");
+          nome.css("backgroundColor","yellow");
+      });
+      $("#setText").click(function (){
+          var nome = $("input[name='cidade']");
+          nome.css("backgroundColor","green");
+      });
+      $("#setType").click(function (){
+          var nome = $("input[name='email']");
+          nome.css("backgroundColor","pink");
+      });
+      $("#Limpar").click(function (){
+          $("input").css("backgroundColor","white");
+       });
+    });
+    </script>
+</head>
+    <body>
+        <form name="form1">
+            name:<input type="text" name="nome"><br>
+            cidade:<input type="text" name="cidade"><br>
+            Email:<input type="text" name="email"><br><br>
+        </form>
+        <button id="setNome">Set campo Nome</button>
+        <button id="setText">Set campo Texto</button>
+        <button id="setType">Set campo Type</button>
+        <button id="Limpar">Limpar campos</button>
+    </body>
+

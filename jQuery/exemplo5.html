@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 5</title>
+<script src="jQuery/jquery-3.4.1.js"></script>
+    <style type="text/css">
+         iframe{
+             width: 100%;
+             height: 900px;
+         }
+    </style>
+<script>
+      //$(funcao);
+     $(document).ready(function (){
+         console.log("Documento carregador")
+     });
+
+     $(window).on("load",function () {
+         console.log("Janela carregadora")
+     });
+</script>
+</head>
+<body>
+     <iframe src="http://www.devisate.com.br"></iframe>
+</body>
+</html>

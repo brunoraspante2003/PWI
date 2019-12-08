@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="jQuery/jquery-3.4.1.js"></script>
+    <title>Exemplo</title>
+   <style type="text/css">
+          .vermelho{
+              color: red;
+          }
+          .borda{
+              border: solid blue;
+          }
+   </style>
+   <script>
+       $(document).ready(function (){
+           $("button").click(function (){
+               $("p").addClass("vermelho borda");
+           });
+       });
+   </script>
+</head>
+<body>
+    <h1> Adiciona um classe css para tag 'p' ao clicar no botão </h1>
+    <h2> Cabeçalho </h2>
+    <p> Isso é um paragrafo. </p>
+    <p> Isso é outro paragrafo. </p>
+    <button>Click aqui</button><br>
+</body>
+</html>

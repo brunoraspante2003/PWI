@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Exemplo em Atributo</title>
+       <meta charset="UTF-8">
+       <script src="jQuery/jquery-3.4.1.js"></script>
+       <script>
+                $(document).ready(function()   {
+                    $("button").click(function()  {
+                        $(this).hide();
+                    });
+                    $("p").click(function() {
+                        $(this).hide();
+                    });
+                });
+       </script>
+</head>
+<body>
+    <h1>Oculta o elemento clicado</h1>
+    <h2>Cabeçalho</h2>
+    <p class="test">Isso é um  paragrafo.</p>
+    <p class="test">Isso é outro paragrafo.</p>
+    <button>Clique Aqui</button><br>
+</body>
+</html>
+

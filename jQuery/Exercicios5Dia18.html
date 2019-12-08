@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <script src="jQuery/jquery-3.4.1.js"></script>
+    <title>Exemplo</title>
+  <style type="text/css">
+  </style>
+  <script>
+       $(document).ready(function (){
+        var p = $("p");
+        $("button").click(function (){
+            if(p.hasClass("vermelho")){
+                p.removeClass("vermelho");
+                p.addClass("azul");
+            }else if(p.hasClass("azul")){
+                p.removeClass("azul");
+            }else{(p.addClass("vermelho"));}
+        });
+    });
